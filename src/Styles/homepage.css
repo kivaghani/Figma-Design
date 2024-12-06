@@ -1,0 +1,180 @@
+/* General Styles */
+.homepage {
+    background-color: #f7fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    height: 40px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #4a5568;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #f97316;
+  }
+  
+  .contact-button {
+    background-color: #f97316;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-button:hover {
+    background-color: #ea580c;
+  }
+  
+  /* Main Content */
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-image: url('/src/assets/pathbg.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    height: calc(100vh - 80px); /* Ensures it fits within the viewport minus the header */
+  }
+  
+  .left-section {
+    width: 50%;
+  }
+  
+  .question-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .question-text p {
+    margin-top: 10px;
+    color: #4a5568;
+  }
+  
+  .question-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question-box p {
+    font-size: 1.1rem;
+    color: #4a5568;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .yes-button,
+  .no-button {
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .yes-button {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .yes-button:hover {
+    background-color: #ea580c;
+  }
+  
+  .no-button {
+    background-color: #edf2f7;
+    color: #4a5568;
+  }
+  
+  .no-button:hover {
+    background-color: #e2e8f0;
+  }
+  
+  .time-text {
+    margin-top: 10px;
+    color: #6b7280;
+  }
+  
+  /* Right Section */
+  .right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .image {
+    max-height: 300px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%;
+    }
+  
+    .question-text h2 {
+      font-size: 2rem;
+    }
+  
+    .question-box {
+      padding: 15px;
+    }
+  
+    .buttons {
+      flex-direction: column;
+    }
+  
+    .image {
+      max-height: 250px;
+    }
+  }
+  
