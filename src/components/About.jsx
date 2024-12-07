@@ -1,7 +1,6 @@
 import React from 'react';
 import bannerImage from '../assets/banner.png'; 
 import backgroundImage from '../assets/Rectangleabout-bg.png'; 
-import Footer from './Footer';
 
 const AboutUs = () => {
   return (
@@ -31,7 +30,6 @@ const AboutUs = () => {
           className="rounded-lg shadow-lg"
         />
       </div>
-      <Footer/>
     </div>
   );
 };

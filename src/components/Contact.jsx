@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Footer from './Footer';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -158,7 +157,6 @@ const ContactForm = () => {
           </div>
         </form>
       </div>
-      <Footer/>
     </div>
   );
 };

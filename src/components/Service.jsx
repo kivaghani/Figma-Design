@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 
 const Services = () => {
   return (
@@ -139,7 +138,6 @@ const Services = () => {
         </div>
       </div>
     </div>
-    <Footer/>
     </div>
   );
 };
