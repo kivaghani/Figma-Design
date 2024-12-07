@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Footer from "./Footer";
 
 const BlogsPage = () => {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -48,6 +49,7 @@ const BlogsPage = () => {
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
